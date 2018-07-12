@@ -1,0 +1,24 @@
+encrypt:
+  key: key1
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://git.coding.net/lx1991/springcloud-config-server.git
+          search-paths: /**
+          basedir: /data/${spring.application.name}
+          clone-on-start: true
+      label: master
+      username: user
+      password: 123
+
+
+
+
+
+
+
+
+
+
